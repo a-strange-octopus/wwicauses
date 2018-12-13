@@ -6,8 +6,16 @@
     <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Special+Elite|Teko|Libre+Baskerville" rel="stylesheet">
     <style>
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
       body {
-        font-family: ;
+        background: black;
       }
       #title {
         font-size: 7vw;
@@ -21,6 +29,8 @@
         background-image: url(images/title.png);
         background-size: cover;
         color: orange;
+        box-shadow: inset 0 0 5em 1em #000;
+        animation: fadein 1s;
       }
       #title b {
         font-weight: bold;
@@ -31,7 +41,7 @@
       }
       .backdrop {
         position: absolute;
-        height: 30vh;
+        height: 33.3vh;
         width: 100%;
         background-color: rgba(0,0,0,0.7);
       }
@@ -55,7 +65,7 @@
         z-index: 1;
       }
       .display {
-        height: 30vh;
+        height: 33.3vh;
         width: 100%;
         display: flex;
         align-content: center;
@@ -264,8 +274,8 @@
     })
     //ALLIANCES
     $("#alliances").click(function() {
-      var text1 = "<h1>Alliances</h1><h2>Agreements formed between countries that ensure that they assist each other</h2><p>European countries had formed extensive alliances with each other, with there being two main ones: the Central Powers and the Allied Powers. The Central Powers comprised of Germany, Austria-Hungary, Bulgaria, and Turkey, while the Allied Powers, in addition to various other smaller countries, comprised of Great Britain, France, Russia, and Belgium. With the intent of isolating France, Germany formed the Triple Alliance with Austria-Hungary and Italy in 1879, while Russia, France, and Great Britain formed the Triple Entente in 1907 in response to Germany's aggression.</p>"
-      var text2 = "<img src='images/alliances.png'/><p>While alliances united countries, they also increased tensions between opposing countries. As more countries got involved in a dispute, there would be more fighting and the situation would escalate. When World War I began, allies began to get involved and help each other, broadening the extend of the conflict.</p>"
+      var text1 = "<h1>Alliances</h1><h2>Agreements formed between countries that ensure that they assist each other</h2><p>European countries had formed extensive alliances with each other during the war, with there being two main ones: the Central Powers and the Allied Powers. The Central Powers comprised of Germany, Austria-Hungary, Bulgaria, and Turkey, while the Allied Powers, in addition to various other smaller countries, comprised of Great Britain, France, Russia, and Belgium. With the intent of isolating France, Germany formed the Triple Alliance with Austria-Hungary and Italy in 1879, while Russia, France, and Great Britain formed the Triple Entente in 1907 in response to Germany's aggression.</p>"
+      var text2 = "<img src='images/alliances.png'/><p>The already established alliances before the war helped form the alliances during the war. While alliances united countries, they also increased tensions between opposing countries. As more countries got involved in a dispute, there would be more fighting and the situation would escalate. When World War I began, allies began to get involved and help each other, broadening the extend of the conflict.</p>"
       $('html').css({
           overflow: 'hidden'
       });
