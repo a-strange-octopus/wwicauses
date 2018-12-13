@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Causes of World War I</title>
+    <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite|Teko|Libre+Baskerville" rel="stylesheet">
+    <style>
+      body {
+        font-family: ;
+      }
+      #title {
+        font-size: 7vw;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: special elite;
+        background-image: url(images/title.png);
+        background-size: cover;
+        color: orange;
+      }
+      #title b {
+        font-weight: bold;
+        font-size: 20vw;
+      }
+      #title p {
+        font-size: 3vw;
+      }
+      .backdrop {
+        position: absolute;
+        height: 30vh;
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+      }
+      .backdrop1 {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        -webkit-backdrop-filter: blur(5px);
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+        display: none;
+        background: rgba(0,0,0,0.5);
+      }
+      .display b {
+        font-weight: bold;
+        font-size: 11vh;
+        color: red;
+      }
+      .display p {
+        z-index: 1;
+      }
+      .display {
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 7vh;
+        font-family: special elite;
+        color: white;
+        cursor: pointer;
+      }
+      #militarism {
+        background-image: url(images/militarism.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #alliances {
+        background-image: url(images/alliances.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #imperialism {
+        background-image: url(images/imperialism.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #nationalism {
+        background-image: url(images/nationalism.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #assassination {
+        background-image: url(images/assassination.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .content {
+        height: calc(100vh - 10vw);
+        width: 90%;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        display: none;
+        margin: 5%;
+      }
+      .content .text {
+        width: 100%;
+        height: 100%;
+        background: black;
+        display: flex;
+        padding: 5%;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        overflow-y: scroll;
+      }
+      .content h1 {
+        color: white;
+        font-size: 15vw;
+        text-align: center;
+        font-family: teko;
+      }
+      .content h2 {
+        font-style: italic;
+        color: white;
+        text-align: center;
+        font-family: "Libre Baskerville";
+        padding-bottom: 5%;
+        font-size: 13px;
+      }
+      .content p {
+        color: white;
+        font-family: "Libre Baskerville";
+        line-height: 2;
+      }
+      .content img {
+        height: 60%;
+        width: 60vh;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 3%;
+      }
+      button {
+        position: fixed;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        width: 10vw;
+        height: 10vw;
+        z-index: 4;
+        background: green;
+        display: none;
+        cursor: pointer;
+        font-size: 5vh;
+        color: white;
+      }
+      button:hover {
+        background-color: #43b731
+      }
+      #left {
+        left: 2%;
+        top: 20%;
+      }
+      #right {
+        right: 2%;
+        top: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="title">
+      <h1><b>CAUSES</b> of <b>WWI</b></h1>
+      <p>by Maggie Li</p>
+    </div>
+    <div class="display" id="militarism">
+      <div class="backdrop"></div>
+      <p><b>M</b>ilitarism</p>
+    </div>
+    <div class="display" id="alliances">
+      <div class="backdrop"></div>
+      <p><b>A</b>lliances</p>
+    </div>
+    <div class="display" id="imperialism">
+      <div class="backdrop"></div>
+      <p><b>I</b>mperialism</p>
+    </div>
+    <div class="display" id="nationalism">
+      <div class="backdrop"></div>
+      <p><b>N</b>ationalism</p>
+    </div>
+    <div class="display" id="assassination">
+      <div class="backdrop"></div>
+      <p><b>The Spark:</b> Assassination</p>
+    </div>
+    <div class="backdrop1"></div>
+    <button id="left">←</button>
+    <button id="right">→</button>
+    <div class="content" id="militarism1">
+      <div class="text">
+      </div>
+    </div>
+    <div class="content" id="alliances1">
+      <div class="text">
+      </div>
+    </div>
+    <div class="content" id="imperialism1">
+      <div class="text">
+      </div>
+    </div>
+    <div class="content" id="nationalism1">
+      <div class="text">
+      </div>
+    </div>
+    <div class="content" id="assassination1">
+      <div class="text">
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    //MILITARISM
+    $("#militarism").click(function() {
+      var text1 = "<h1>Militarism</h1><h2>Building a strong military in preparation for war</h2><p>Up until the start of World War I, European countries had been building up militaries that had been amassing power both in numbers and strength. These armies were made to be deployed quickly and efficiently, and with this ready supply, countries could easily start and engage in war on demand. Fear of other countries' increasing military strength had led to competition between countries to have the most powerful military in Europe, resulting in a faster progression than ever to militarize.</p>"
+      var text2 = "<img src='images/militarism.jpg'/><p>Militarism increased feelings of nationalism and patriotism, and because of this, countries were eager to engage in war in order to show off how strong they were. Most of Europe's powerful countries had already adopted large standing armies by the beginning of World War I.</p>"
+      $('html').css({
+          overflow: 'hidden'
+      });
+      $("#militarism1 .text").html(text1)
+      $("#militarism1").css({
+        display: "flex"
+      });
+      $(".backdrop1").css({
+        display: "block"
+      });
+      $("#right").css({
+        display: "block"
+      })
+      $("#right").click(function() {
+        $("#militarism1 .text").html(text2)
+        $(this).css({
+          display: "none"
+        })
+        $("#left").css({
+          display: "block"
+        })
+      })
+      $("#left").click(function() {
+        $(".text").html(text1)
+        $(this).css({
+          display: "none"
+        })
+        $("#right").css({
+          display: "block"
+        })
+      })
+    })
+    //ALLIANCES
+    $("#alliances").click(function() {
+      var text1 = "<h1>Alliances</h1><h2>Agreements formed between countries that ensure that they assist each other</h2><p>European countries had formed extensive alliances with each other, with there being two main ones: the Central Powers and the Allied Powers. The Central Powers comprised of Germany, Austria-Hungary, Bulgaria, and Turkey, while the Allied Powers, in addition to various other smaller countries, comprised of Great Britain, France, Russia, and Belgium. With the intent of isolating France, Germany formed the Triple Alliance with Austria-Hungary and Italy in 1879, while Russia, France, and Great Britain formed the Triple Entente in 1907 in response to Germany's aggression.</p>"
+      var text2 = "<img src='images/alliances.png'/><p>While alliances united countries, they also increased tensions between opposing countries. As more countries got involved in a dispute, there would be more fighting and the situation would escalate. When World War I began, allies began to get involved and help each other, broadening the extend of the conflict.</p>"
+      $('html').css({
+          overflow: 'hidden'
+      });
+      $("#alliances1 .text").html(text1)
+      $("#alliances1").css({
+        display: "flex"
+      });
+      $(".backdrop1").css({
+        display: "block"
+      });
+      $("#right").css({
+        display: "block"
+      })
+      $("#right").click(function() {
+        $("#alliances1 .text").html(text2)
+        $(this).css({
+          display: "none"
+        })
+        $("#left").css({
+          display: "block"
+        })
+      })
+      $("#left").click(function() {
+        $(".text").html(text1)
+        $(this).css({
+          display: "none"
+        })
+        $("#right").css({
+          display: "block"
+        })
+      })
+    })
+    //IMPERIALISM
+    $("#imperialism").click(function() {
+      var text1 = "<h1>Imperialism</h1><h2>Colonizing lands overseas in order to build upon an empire</h2><p>Many European countries had started colonizing areas in Africa and Asia prior to World War I, and with this, there had been huge competition over the control of areas, increasing the animosity between countries. Each country wanted to expand their empire but this desire led to clashes as countries felt as though they needed to match the strength of rivals.</p>"
+      var text2 = "<img src='images/imperialism.png'/><p>The influence of European countries was to a pervasive extent. Africa was colonized primarily by Great Britain and France, while various other countries had smaller stakes in the continent.</p>"
+      $('html').css({
+          overflow: 'hidden'
+      });
+      $("#imperialism1 .text").html(text1)
+      $("#imperialism1").css({
+        display: "flex"
+      });
+      $(".backdrop1").css({
+        display: "block"
+      });
+      $("#right").css({
+        display: "block"
+      })
+      $("#right").click(function() {
+        $("#imperialism1 .text").html(text2)
+        $(this).css({
+          display: "none"
+        })
+        $("#left").css({
+          display: "block"
+        })
+      })
+      $("#left").click(function() {
+        $(".text").html(text1)
+        $(this).css({
+          display: "none"
+        })
+        $("#right").css({
+          display: "block"
+        })
+      })
+    })
+    //NATIONALISM
+    $("#nationalism").click(function() {
+      var text1 = "<h1>Nationalism</h1><h2>A feeling of devotion to a country and aggression towards other countries</h2><p>Nationalism encited countries to be more competitive and aggressive towards one other, and among the things European countries were fighting for were more markets, resources, and land. Additionally, there was ethnic turmoil in the Balkans which fostered independence movements, and territorial conflicts, such as France's relinquishment of Alsace-Lorraine to Russia, also embodied other examples of growing nationalism in Europe.</p>"
+      var text2 = "<img src='images/nationalism.jpg'/><p>Nationalism grew among countries in Europe, fuelling patriotism and distrust among nations. Children were told at a young age that they should be prepared to make sacrifies for their country.</p>"
+      $('html').css({
+          overflow: 'hidden'
+      });
+      $("#nationalism1 .text").html(text1)
+      $("#nationalism1").css({
+        display: "flex"
+      });
+      $(".backdrop1").css({
+        display: "block"
+      });
+      $("#right").css({
+        display: "block"
+      })
+      $("#right").click(function() {
+        $("#nationalism1 .text").html(text2)
+        $(this).css({
+          display: "none"
+        })
+        $("#left").css({
+          display: "block"
+        })
+      })
+      $("#left").click(function() {
+        $(".text").html(text1)
+        $(this).css({
+          display: "none"
+        })
+        $("#right").css({
+          display: "block"
+        })
+      })
+    })
+    //ASSASSINATION
+    $("#assassination").click(function() {
+      var text1 = "<h1>Assassination</h1><h2>The shot heard 'round the world, or the event that incited World War I</h2><p>Ultimately, the assassination of Archduke Franz Ferdinand and his wife Sophie ended up being the spark that ignited the war. They were heir to the Austrian throne, and while the two were visiting Sarajevo, a city in Bosnia, on June 28, 1914, they were shot by a Serbian extremist who was part of the Black Hand, an underground organization that opposed Austrian rule in Bosnia. Austria-Hungary had conquered Bosnia and Herzegovina earlier in 1908, and this had angered Serbia since Serbia had wanted to conquer the region for themselves.</p>"
+      var text2 = "<img src='images/assassination.jpg'/><p>A month after the assassination, Austria-Hungary declared war on Serbia and Russia, being Serbia's ally, declared war on Austria-Hungary. Ignoring multiple appeals from other countries to stop, the two countries deployed troops and started fighting.</p>"
+      $('html').css({
+          overflow: 'hidden'
+      });
+      $("#assassination1 .text").html(text1)
+      $("#assassination1").css({
+        display: "flex"
+      });
+      $(".backdrop1").css({
+        display: "block"
+      });
+      $("#right").css({
+        display: "block"
+      })
+      $("#right").click(function() {
+        $("#assassination1 .text").html(text2)
+        $(this).css({
+          display: "none"
+        })
+        $("#left").css({
+          display: "block"
+        })
+      })
+      $("#left").click(function() {
+        $(".text").html(text1)
+        $(this).css({
+          display: "none"
+        })
+        $("#right").css({
+          display: "block"
+        })
+      })
+    })
+    //Backdrop
+    $(".backdrop1").click(function() {
+      $('html, body').css({
+          overflow: 'auto'
+      });
+      $(".content").css({
+        display: "none"
+      });
+      $(".backdrop1").css({
+        display: "none"
+      })
+      $("button").css({
+        display: "none"
+      })
+    })
+  </script>
+</html>
