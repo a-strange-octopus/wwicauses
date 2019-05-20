@@ -17,7 +17,7 @@
 },
 "homepage": "",
 "dependencies": {
-  "expressjs": "^4.17.0"
-}
-"engines" : { "node" : "12.2.0" }
+  "express": "^4.17.0"
+},
+"engines": { "node" : "12.2.0" }
 }
