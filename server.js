@@ -3,7 +3,7 @@ const app = express()
 var path = require('path')
 const port = process.env.PORT
 
-app.use(express.static('/'))
+app.use(express.static('images'))
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/index.html')));
 
