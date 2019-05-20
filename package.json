@@ -15,5 +15,8 @@
 "bugs": {
 "url": ""
 },
-"homepage": ""
+"homepage": "",
+"dependencies": {
+  "express.js": "^4.17.0"
+}
 }
