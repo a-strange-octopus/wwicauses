@@ -17,6 +17,6 @@
 },
 "homepage": "",
 "dependencies": {
-  "express.js": "^4.17.0"
+  "express.js": "4.17.0"
 }
 }
